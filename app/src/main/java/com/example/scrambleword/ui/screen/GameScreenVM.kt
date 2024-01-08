@@ -15,6 +15,7 @@ class GameScreenVM :ViewModel(){
 
     //declarations
     //app state
+    //flows are part of observable which compose uses to track data for UI
     private val _gameUiState= MutableStateFlow(GameUiState())
     val gameUiState=_gameUiState.asStateFlow()
 
